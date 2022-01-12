@@ -5,6 +5,8 @@
 ##  Purpose of script: Find the proportion of people who experience loneliness in Estonia from       ##
 ##                     European Social Survey 2014.                                                  ##
 ##                                                                                                   ##
+##  h/t: github.com/ropensci/essurvey for ESS data download strategy                                 ##
+##                                                                                                   ##
 ##  Author: Mart Roben                                                                               ##
 ##  Date Created: 13. Jan 2022                                                                       ##
 ##                                                                                                   ##
