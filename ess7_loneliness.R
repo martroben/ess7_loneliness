@@ -36,8 +36,8 @@ pacman::p_load("magrittr",
 # Inputs #
 ##########
 
-# register at https://www.europeansocialsurvey.org/user/new
-login_email <- "mart.roben@gmail.com"
+# register at https://www.europeansocialsurvey.org/user/new and use your registered e-mail
+login_email <- "xxxx.xxxx@mail.com"
 
 
 
