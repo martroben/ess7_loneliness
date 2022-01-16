@@ -57,9 +57,14 @@ sav_file_name_in_archive <- "ESS7e02_2.sav"
 # Importing data #
 ##################
 
+# Authentication
 httr::POST(ess_login_url, body = list(u = login_email))
+httr::GET(ess_login_url, query = list(u = login_email))
+
+# Get data
 ess_data_spss <- httr::GET(url = ess_data_url)
 
+# Extract data
 tempfile_name <- tempfile()
 writeBin(httr::content(ess_data_spss, as = "raw"), tempfile_name)
 ess_data <- unz(tempfile_name, sav_file_name_in_archive) %>% haven::read_sav()
